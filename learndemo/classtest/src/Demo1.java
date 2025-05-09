@@ -15,7 +15,7 @@ public class Demo1 {
         insetSort(arr3);
         System.out.println(Arrays.toString(arr3));
 
-        int[] arr4 = {9,6,9,3,6,4,2,1,6};
+        int[] arr4 = {9,1,8,7,6,5,4,3,2,10};
         System.out.println(getMin(arr4));
     }
 
@@ -87,8 +87,8 @@ public class Demo1 {
         }
         int left=0;
         int right= arr.length-1;
+        int indxe = (right+left)/2;
         while (true){
-            int indxe = (right+left)/2;
             if(arr[indxe-1]>arr[indxe]&&arr[indxe+1]>arr[indxe]){
                 return arr[indxe];
             }
