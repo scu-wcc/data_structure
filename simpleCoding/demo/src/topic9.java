@@ -1,4 +1,4 @@
-public class topic2 {
+public class topic9 {
 
     //回文数
     public static boolean isPalindrome(int x) {

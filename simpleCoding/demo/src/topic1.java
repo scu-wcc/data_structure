@@ -10,7 +10,7 @@ public class topic1 {
         int len=nums.length;
         for (int i = 0; i < len; i++) {
             if(hashMap.containsKey(target-nums[i])){
-                return new int[]{i,hashMap.get(target-nums[i])};
+                return new int[]{hashMap.get(target-nums[i]),i};
             }
             hashMap.put(nums[i],i);
         }

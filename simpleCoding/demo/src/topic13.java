@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class topic3 {
+public class topic13 {
 
     private static final Map<Character,Integer> map = new HashMap<>();
 
