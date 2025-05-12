@@ -1,3 +1,5 @@
+package simple_problem;
+
 import java.util.HashMap;
 import java.util.Map;
 

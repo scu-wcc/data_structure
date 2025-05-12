@@ -1,3 +1,5 @@
+package simple_problem;
+
 public class topic9 {
 
     //回文数
