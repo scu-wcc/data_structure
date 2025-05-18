@@ -8,7 +8,7 @@ public class QuickSort {
     public static Random r = new Random();
 
     public static void main(String[] args) {
-        int[] arr= new int[]{3,6,5,4,5,9,2,4};
+        int[] arr= new int[]{3,6,9,9,2,3,5,1,4,5,9,2,2,9,5,3};
         int num=5;
         /*sort(arr,num);*/
 
