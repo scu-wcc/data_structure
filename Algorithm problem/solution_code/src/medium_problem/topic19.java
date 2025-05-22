@@ -26,7 +26,7 @@ public class topic19 {
 
     /**
      *
-     * 使用双链表
+     * 使用双指针
      */
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if(head==null){
