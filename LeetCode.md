@@ -35,5 +35,7 @@ public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 	就这样各路军阀一直以这种以一敌一同归于尽的方式厮杀下去，直到少数阵营都死光，那么最后剩下的几个必然属于多数阵营，winner 就是多数阵营。
 	（多数阵营 51个，少数阵营只有49个，死剩下的2个就是多数阵营的人）
 	
-	
-	
+4.DP:动态规划:第K个节点受K-1与K-2影响。
+
+
+

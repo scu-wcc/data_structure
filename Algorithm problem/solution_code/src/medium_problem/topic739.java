@@ -20,26 +20,22 @@ public class topic739 {
 
     }
     public int[] dailyTemperatures(int[] temperatures) {
-        Stack<Integer> numStack = new Stack<>();
         Stack<Integer> indexStack = new Stack<>();
 
         int len = temperatures.length;
 
         for (int i = 0; i <len ; i++) {
-            if (!numStack.isEmpty() && temperatures[i] > numStack.peek()) {
-                while (!numStack.isEmpty() && temperatures[i] > numStack.peek()) {
+            if (!indexStack.isEmpty() && temperatures[i] > temperatures[indexStack.peek()]) {
+                while (!indexStack.isEmpty() && temperatures[i] > temperatures[indexStack.peek()]) {
                     int index = indexStack.pop();
-                    numStack.pop();
                     temperatures[index] = i - index;
                 }
 
             }
-            numStack.push(temperatures[i]);
             indexStack.push(i);
         }
 
-        while (!numStack.isEmpty()){
-            numStack.pop();
+        while (!indexStack.isEmpty()){
             int index =  indexStack.pop();
             temperatures[index] = 0;
         }
